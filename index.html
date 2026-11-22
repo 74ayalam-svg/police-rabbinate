@@ -5,27 +5,45 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Police Rabbinate App — ayala</title>
 <meta name="description" content="UX/UI case study of the Police Rabbinate app and admin system.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="site-header.css">
 </head>
 <body>
 
 
 <div class="progress" aria-hidden="true"><span></span></div>
+<header class="sh" id="header">
+  <div class="sh-row">
+    <a class="sh-logo" href="https://74ayalam-svg.github.io/portfolio/" aria-label="Ayala – home">Ayala<span>.</span></a>
+    <nav class="sh-nav" aria-label="Main">
+      <a href="https://74ayalam-svg.github.io/portfolio/">Home</a>
+      <a href="https://74ayalam-svg.github.io/portfolio/#about">About</a>
+      <a href="https://74ayalam-svg.github.io/portfolio/#works">Works</a>
+      <a href="https://74ayalam-svg.github.io/portfolio/#services">Services</a>
+      <a href="https://74ayalam-svg.github.io/portfolio/#contact">Contact</a>
+    </nav>
+    <div class="sh-actions">
+      <button class="sh-menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="sh-overlay"><span></span><span></span></button>
+      <a class="sh-pill" href="https://74ayalam-svg.github.io/portfolio/#contact">Let’s chat <span class="sh-wave" aria-hidden="true">👋</span></a>
+    </div>
+  </div>
+</header>
+
+<div class="sh-overlay" id="sh-overlay" hidden>
+  <nav aria-label="Menu">
+    <a href="https://74ayalam-svg.github.io/portfolio/"><small>01</small>Home</a>
+    <a href="https://74ayalam-svg.github.io/portfolio/#about"><small>02</small>About</a>
+    <a href="https://74ayalam-svg.github.io/portfolio/#works"><small>03</small>Works</a>
+    <a href="https://74ayalam-svg.github.io/portfolio/#services"><small>04</small>Services</a>
+    <a href="https://74ayalam-svg.github.io/portfolio/#contact"><small>05</small>Contact</a>
+  </nav>
+</div>
 
 <div class="page" id="page">
 <div class="wrap">
-
-  <!-- ============ HEADER ============ -->
-  <header class="nav" id="nav">
-    <a class="logo" href="https://74ayalam-svg.github.io/portfolio/">ayala</a>
-    <div class="nav-right">
-      <nav class="menu-pill">
-        <a href="https://74ayalam-svg.github.io/portfolio/">Home</a><a href="https://74ayalam-svg.github.io/portfolio/#about">About</a><a href="https://74ayalam-svg.github.io/portfolio/#works">Works</a><a href="https://74ayalam-svg.github.io/portfolio/#contact">Contact</a>
-      </nav>
-      <a class="btn-next magnetic" href="https://74ayalam-svg.github.io/portfolio/vort/"><span>Next project</span><i class="arrow">⟶</i></a>
-      <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
-    </div>
-  </header>
 
   <!-- ============ HERO ============ -->
   <div class="tags">
@@ -400,10 +418,20 @@
     </div>
   </section>
 
+  <!-- ============ NEXT ============ -->
+  <section class="next r">
+    <div>
+      <small>NEXT PROJECT</small>
+      <a class="big" href="https://74ayalam-svg.github.io/portfolio/vort/">Vort Dating System <span aria-hidden="true">⟶</span></a>
+    </div>
+    <a class="back" href="https://74ayalam-svg.github.io/portfolio/#works">← All works</a>
+  </section>
+
 </div>
 </div>
 
 <div class="toast" id="toast">Copied</div>
+<script src="site-header.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
